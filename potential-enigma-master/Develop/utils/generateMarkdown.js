@@ -10,7 +10,7 @@ function renderLicenseBadge(license) {
 function renderLicenseLink(license) {
   if (!license) return '';
   return `
-    [https://choosealicense.com/](https://choosealicense.com/)
+  [https://choosealicense.com/](https://choosealicense.com/)
   `;
 }
 
@@ -20,9 +20,9 @@ function renderLicenseSection(license) {
   if (!license) return '';
 
   return `
-    ## License
-    Use this link if you need help choosing a license ${renderLicenseLink(license)}
-    ${license}
+  ## License
+  Use this link if you need help choosing a license ${renderLicenseLink(license)}
+  ${license}
   `
 }
 
