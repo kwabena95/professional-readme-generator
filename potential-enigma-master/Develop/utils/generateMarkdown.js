@@ -22,7 +22,7 @@ function renderLicenseSection(license) {
   return `
   ## License
   Use this link if you need help choosing a license ${renderLicenseLink(license)}
-
+  * ${license.license}
   `
 }
 
@@ -37,14 +37,14 @@ function generateMarkdown(data) {
     
   ## Table of Contents (Optional)
   If your README is very long, add a table of contents to make it easy for users to find what they need.
-  ${data.tableContent}(#${data.tableContent})
+  * ${data.tableContent}(#${data.tableContent})
    
     
   ## Installation
   * ${data.installation}
     
   ## Usage
-  ${data.usage}
+  * ![${data.usage}](${data.usage})
 
 
   ## Credits
