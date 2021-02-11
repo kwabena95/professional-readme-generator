@@ -37,10 +37,8 @@ function generateMarkdown({ title, description, installation, usage, credits, fe
     
   ## Table of Contents (Optional)
   If your README is very long, add a table of contents to make it easy for users tfind whatthey need.
-    *  [${tableContent}](#${tableContent})
-    *  [${usage}](#${usage})
-    *  [${credits}](#${credits})
-    *  [${license}](#${license})
+  *  [${tableContent}](#${tableContent})
+   
     
   ## Installation
   ${installation}
