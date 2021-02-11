@@ -22,8 +22,9 @@ function renderLicenseSection(license) {
   return `
   ## License
   Use this link if you need help choosing a license ${renderLicenseLink(license)}
-  * ${license.license}
+  * ${license.license ? license.license : ''}
   `
+
 }
 
 // TODO: Create a function to generate markdown for README
@@ -37,7 +38,12 @@ function generateMarkdown(data) {
     
   ## Table of Contents (Optional)
   If your README is very long, add a table of contents to make it easy for users to find what they need.
-  * ${data.tableContent}(#${data.tableContent})
+  * ${data.installation}(#${data.installation})
+  * ${data.usage}(#${data.usage})
+  * ${data.credits}(#${data.credits})
+  * ${data.feature}(#${data.feature})
+  * ${data.contribution}(#${data.contribution})
+  * ${data.tests}(#${data.tests})
    
     
   ## Installation
@@ -48,22 +54,20 @@ function generateMarkdown(data) {
 
 
   ## Credits
-  ${data.credits}
+  ${data.credits ? data.credits : ''}
 
   ${renderLicenseSection(data.license)}
     
   ## Features
-  ${data.feature}
+  ${data.feature ? data.feature : ''}
     
   ## Contributions
-  ${data.contribution}
+  ${data.contribution ? data.contribution : ''}
     
   ## Tests
   ${data.tests}
     
-   `;
-
-
+  `;
 }
 
 module.exports = generateMarkdown;
