@@ -10,7 +10,7 @@ function renderLicenseBadge(license) {
 function renderLicenseLink(license) {
   if (!license) return '';
   return `
-    [https://choosealicense.com/]
+    [https://choosealicense.com/](https://choosealicense.com/)
   `;
 }
 
@@ -21,7 +21,7 @@ function renderLicenseSection(license) {
 
   return `
     ## License
-    Use link this link if you need help choosing a license ${renderLicenseLink()}
+    Use this link if you need help choosing a license ${renderLicenseLink(license)}
     ${license}
   `
 }
@@ -30,28 +30,29 @@ function renderLicenseSection(license) {
 function generateMarkdown({ title, description, installation, usage, credits, feature, contribution, tests, tableContent, license }) {
 
   return `
-        #${title}
+        # ${title}
 
         ## Description
         ${description}
     
         ## Table of Contents (Optional)
         If your README is very long, add a table of contents to make it easy for users to find what they need.
-          * [${tableContent}] (# ${tableContent})
-          * [${usage}] (# ${usage})
-          * [${credits}] (# ${credits})
-          * [${license}] (# ${license})
+          * [${tableContent}](#${tableContent})
+          * [${usage}](#${usage})
+          * [${credits}](#${credits})
+          * [${license}](#${license})
     
         ## Installation
         ${installation}
     
         ## Usage
         ${usage}
-    
+
+
         ## Credits
         ${credits}
-    
-        ${renderLicenseSection()}
+
+        ${renderLicenseSection(license)}
     
         ## Features
         ${feature}
