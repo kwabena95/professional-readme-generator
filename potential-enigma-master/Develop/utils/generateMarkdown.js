@@ -22,7 +22,7 @@ function renderLicenseSection(license) {
   return `
     ## License
     Use link this link if you need help choosing a license ${renderLicenseLink()}
-    ${data.license}
+    ${license}
   `
 }
 
@@ -30,7 +30,7 @@ function renderLicenseSection(license) {
 function generateMarkdown({ title, description, installation, usage, credits, feature, contribution, tests, tableContent, license }) {
 
   return `
-        # ${title}
+        #${title}
 
         ## Description
         ${description}

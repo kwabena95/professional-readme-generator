@@ -132,7 +132,7 @@ const questions = () => {
 
     ]).then(data => {
         console.log(data);
-        writeToFile('./README', generateMarkDown(data))
+        writeToFile('./README.md', generateMarkDown(data))
     })
 };
 
@@ -150,18 +150,12 @@ function writeToFile(fileName, data) {
             });
         })
     }).catch(err => console.log(err));
-    // fs.writeFile(fileName, questions(data), err =>{
-    //     if(err) throw err;
-    //     console.log('File created');
-    // })
 
 }
 
 // TODO: Create a function to initialize app
 function init() {
     questions();
-    // .then(readme => generateMarkDown(readme))
-    // .then(writeToFile('./README', generateMarkDown(data)));
 }
 
 // Function call to initialize app
