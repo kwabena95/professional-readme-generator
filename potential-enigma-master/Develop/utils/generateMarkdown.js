@@ -30,38 +30,38 @@ function renderLicenseSection(license) {
 function generateMarkdown({ title, description, installation, usage, credits, feature, contribution, tests, tableContent, license }) {
 
   return `
-        # ${title}
+  # ${title}
 
-        ## Description
-        ${description}
+  ## Description
+  ${description}
     
-        ## Table of Contents (Optional)
-        If your README is very long, add a table of contents to make it easy for users to find what they need.
-          * [${tableContent}](#${tableContent})
-          * [${usage}](#${usage})
-          * [${credits}](#${credits})
-          * [${license}](#${license})
+  ## Table of Contents (Optional)
+  If your README is very long, add a table of contents to make it easy for users tfind whatthey need.
+    * [${tableContent}](#${tableContent})
+    * [${usage}](#${usage})
+    * [${credits}](#${credits})
+    * [${license}](#${license})
     
-        ## Installation
-        ${installation}
+  ## Installation
+  ${installation}
     
-        ## Usage
-        ${usage}
+  ## Usage
+  ${usage}
 
 
-        ## Credits
-        ${credits}
+  ## Credits
+  ${credits}
 
-        ${renderLicenseSection(license)}
+  ${renderLicenseSection(license)}
     
-        ## Features
-        ${feature}
+  ## Features
+  ${feature}
     
-        ## Contributions
-        ${contribution}
+  ## Contributions
+  ${contribution}
     
-        ## Tests
-        ${tests}
+  ## Tests
+  ${tests}
     
     
       `;
