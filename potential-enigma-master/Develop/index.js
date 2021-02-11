@@ -37,14 +37,20 @@ const questions = () => {
         {
             type: 'confirm',
             name: 'confirmTableContent',
-            message: 'Do you want to add table of contents (y/n)',
+            message: 'Do you want to add table of contents',
             default: true
+
         },
         {
             type: 'input',
             name: 'tableContent',
             message: 'Provide table of contents.',
-            when: ({ confirmTableContent }) => confirmTableContent
+            when: ({ confirmTableContent }) => confirmTableContent,
+            display() {
+                if (!this.default) {
+                    return;
+                }
+            }
         },
         {
             type: 'input',
@@ -57,7 +63,8 @@ const questions = () => {
                     console.log('Installation process is required.');
                     return false;
                 }
-            }
+            },
+
         },
         {
             type: 'input',

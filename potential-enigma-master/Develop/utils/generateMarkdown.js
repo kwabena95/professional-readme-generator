@@ -22,47 +22,46 @@ function renderLicenseSection(license) {
   return `
   ## License
   Use this link if you need help choosing a license ${renderLicenseLink(license)}
-  ${license}
+
   `
 }
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown({ title, description, installation, usage, credits, feature, contribution, tests, tableContent, license }) {
+function generateMarkdown(data) {
 
   return `
-  # ${title}
+  # ${data.title}
 
   ## Description
-  ${description}
+  ${data.description}
     
   ## Table of Contents (Optional)
-  If your README is very long, add a table of contents to make it easy for users tfind whatthey need.
-  *  [${tableContent}](#${tableContent})
+  If your README is very long, add a table of contents to make it easy for users to find what they need.
+  ${data.tableContent}(#${data.tableContent})
    
     
   ## Installation
-  ${installation}
+  * ${data.installation}
     
   ## Usage
-  ${usage}
+  ${data.usage}
 
 
   ## Credits
-  ${credits}
+  ${data.credits}
 
-  ${renderLicenseSection(license)}
+  ${renderLicenseSection(data.license)}
     
   ## Features
-  ${feature}
+  ${data.feature}
     
   ## Contributions
-  ${contribution}
+  ${data.contribution}
     
   ## Tests
-  ${tests}
+  ${data.tests}
     
-    
-      `;
+   `;
 
 
 }
