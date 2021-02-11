@@ -6,7 +6,7 @@ const generateMarkDown = require('./utils/generateMarkdown');
 
 // TODO: Create an array of questions for user input
 const questions = () => {
-    return inquirer.prompt([
+    inquirer.prompt([
         {
             type: 'input',
             name: 'title',
@@ -130,7 +130,10 @@ const questions = () => {
             }
         }
 
-    ])
+    ]).then(data => {
+        console.log(data);
+        writeToFile('./README', generateMarkDown(data))
+    })
 };
 
 // TODO: Create a function to write README file
@@ -147,13 +150,18 @@ function writeToFile(fileName, data) {
             });
         })
     }).catch(err => console.log(err));
+    // fs.writeFile(fileName, questions(data), err =>{
+    //     if(err) throw err;
+    //     console.log('File created');
+    // })
+
 }
 
 // TODO: Create a function to initialize app
 function init() {
-    questions()
-        // .then(readme => generateMarkDown(readme))
-        .then(writeToFile('./README', generateMarkDown(data)));
+    questions();
+    // .then(readme => generateMarkDown(readme))
+    // .then(writeToFile('./README', generateMarkDown(data)));
 }
 
 // Function call to initialize app
