@@ -82,7 +82,7 @@ const questions = () => {
         },
         {
             type: 'input',
-            name: 'credits',
+            name: 'credit',
             message: 'List collaborators.',
             when: ({ confirmCredits }) => confirmCredits
         },
@@ -120,7 +120,7 @@ const questions = () => {
         },
         {
             type: 'input',
-            name: 'tests',
+            name: 'test',
             message: 'Go the extra mile and write tests for your application. Then provide examples on how to run them. (Required)',
             validate: testInput => {
                 if (testInput) {

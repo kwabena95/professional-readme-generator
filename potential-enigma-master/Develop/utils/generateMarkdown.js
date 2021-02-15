@@ -39,14 +39,14 @@ function generateMarkdown(data) {
   ## Table of Contents (Optional)
   If your README is very long, add a table of contents to make it easy for users to find what they need.
   ${(!data.tableContent) ? '' :
-      `* [Description](#${data.description})
-  * [Installation](#${data.installation})
-  * [Usage](#${data.usage})
-  * [Credits](#${data.credits})
-  * [License](#${data.license})
-  * [Features](#${data.feature})
-  * [Contributions](#${data.contributions})
-  * [Tests](#${data.tests})`
+      `* [Description](#description)
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Credits](#credit)
+  * [License](#lincense)
+  * [Features](#feature)
+  * [Contributions](#contribution)
+  * [Tests](#test)`
     }
  
 
@@ -60,7 +60,7 @@ function generateMarkdown(data) {
 
 
   ## Credits
-  ${data.credits ? data.credits : ''}
+  ${data.credit ? data.credit : ''}
 
   * ${renderLicenseSection(data.license)}
     
@@ -71,7 +71,7 @@ function generateMarkdown(data) {
   ${data.contribution ? data.contribution : ''}
     
   ## Tests
-  ${data.tests}
+  ${data.test}
     
   `;
 }
