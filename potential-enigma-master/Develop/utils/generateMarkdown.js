@@ -29,7 +29,6 @@ function renderLicenseSection(license) {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  console.log(data.name)
 
   return `
   # ${data.title}
@@ -39,12 +38,18 @@ function generateMarkdown(data) {
     
   ## Table of Contents (Optional)
   If your README is very long, add a table of contents to make it easy for users to find what they need.
-  * [${data.installation.name}](#${data.installation.name}\n)
-  * [${data.usage}](#${data.usage}\n)
-  * [${data.credits}](#${data.credits})
-  * [${data.feature}](#${data.feature})
-  * [${data.contribution}](#${data.contribution})
-  * [${data.tests}](#${data.tests})
+  ${(!data.tableContent) ? '' :
+      `* [Description](#${data.description})
+  * [Installation](#${data.installation})
+  * [Usage](#${data.usage})
+  * [Credits](#${data.credits})
+  * [License](#${data.license})
+  * [Features](#${data.feature})
+  * [Contributions](#${data.contributions})
+  * [Tests](#${data.tests})`
+    }
+ 
+
    
     
   ## Installation
