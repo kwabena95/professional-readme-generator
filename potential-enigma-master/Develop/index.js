@@ -46,11 +46,6 @@ const questions = () => {
             name: 'tableContent',
             message: 'Provide table of contents.',
             when: ({ confirmTableContent }) => confirmTableContent,
-            display() {
-                if (!this.default) {
-                    return;
-                }
-            }
         },
         {
             type: 'input',
@@ -82,7 +77,7 @@ const questions = () => {
         {
             type: 'confirm',
             name: 'confirmCredits',
-            message: 'Were there collaborators on this projects? (y/n)',
+            message: 'Were there collaborators on this projects?',
             default: true
         },
         {
@@ -108,7 +103,7 @@ const questions = () => {
         {
             type: 'confirm',
             name: 'feature',
-            message: 'Would you like to feature this project? (y/n)',
+            message: 'Would you like to feature this project?',
             default: true
         },
         {
