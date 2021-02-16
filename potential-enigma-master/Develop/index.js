@@ -116,7 +116,7 @@ const questions = () => {
             type: 'input',
             name: 'contribution',
             message: 'Provide guidelines to application:',
-            when: ({ confrimContribution }) => confrimContribution
+            when: ({ confirmContribution }) => confirmContribution
         },
         {
             type: 'input',
