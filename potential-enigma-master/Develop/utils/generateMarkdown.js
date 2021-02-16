@@ -25,7 +25,7 @@ function renderLicenseSection(license) {
   return `
   ## License
   Use this link if you need help choosing a license ${renderLicenseLink(license)}
-  ${license ? `* ${license}` : ''}
+  ${license ? license : ''}
   `
 
 }
@@ -45,11 +45,11 @@ function generateMarkdown(data) {
       `* [Description](#description)
   * [Installation](#installation)
   * [Usage](#usage)
-  * [Credits](#credit)
+  * [Credits](#credits)
   * [License](#license)
-  * [Features](#feature)
-  * [Contributions](#contribution)
-  * [Tests](#test)`
+  * [Features](#features)
+  * [Contributions](#contributions)
+  * [Tests](#tests)`
     }
  
 
@@ -59,13 +59,14 @@ function generateMarkdown(data) {
   * ${data.installation}
     
   ## Usage
-  * ![${data.usage}](${data.usage})
+  * ![./image/Screenshot.png](./image/Screenshot.png)
+  * ${data.usage}
 
 
   ## Credits
   ${data.credit ? data.credit : ''}
 
-  ${renderLicenseSection(data.license)}${renderLicenseBadge(data.license)}
+  ${renderLicenseSection(data.license)}  ${renderLicenseBadge(data.license)}
     
   ## Features
   ${data.feature ? data.title : ''}

@@ -1,28 +1,29 @@
 
-  # Professional README Generator
+  # fdsf
 
   ## Description
-  To help users generate readme quickly and easily
+  dfsd
     
   ## Table of Contents (Optional)
   If your README is very long, add a table of contents to make it easy for users to find what they need.
   * [Description](#description)
   * [Installation](#installation)
   * [Usage](#usage)
-  * [Credits](#credit)
+  * [Credits](#credits)
   * [License](#license)
-  * [Features](#feature)
-  * [Contributions](#contribution)
-  * [Tests](#test)
+  * [Features](#features)
+  * [Contributions](#contributions)
+  * [Tests](#tests)
  
 
    
     
   ## Installation
-  * You have clone the repository on to your local machine
+  * vcvcv
     
   ## Usage
-  * ![Run node index.js in the terminal. if succesful, your terminal should look like this screenshot. ./image/Screenshot.png](Run node index.js in the terminal. if succesful, your terminal should look like this screenshot. ./image/Screenshot.png)
+  * ![./image/Screenshot.png](./image/Screenshot.png)
+  * gdfgdfg
 
 
   ## Credits
@@ -33,16 +34,16 @@
   Use this link if you need help choosing a license 
   [https://choosealicense.com/](https://choosealicense.com/)
   
-  * MIT
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  MIT
+    [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
     
   ## Features
-  Professional README Generator
+  fdsf
     
   ## Contributions
-  Feel free to refactor code
+  
     
   ## Tests
-  N/A
+  dfgdf
     
   
