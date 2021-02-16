@@ -59,7 +59,7 @@ function generateMarkdown(data) {
   * ${data.installation}
     
   ## Usage
-  * ![./image/Screenshot.png](./image/Screenshot.png)
+  ![./image/Screenshot.png](./image/Screenshot.png)
   * ${data.usage}
 
 
