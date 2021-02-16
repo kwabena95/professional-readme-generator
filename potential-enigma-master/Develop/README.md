@@ -26,7 +26,7 @@
     
   ## Usage
   ![./image/Screenshot.png](./image/Screenshot.png)
-  Run node index.js in the terminal. if succesful, your terminal should look like this screenshot.
+  Run node index.js in the terminal. if succesful, your terminal should look like this screenshot. 
 
 
   ## Credits
@@ -34,7 +34,7 @@
 
   
   ## License
-  This repository is licensed under [GNU GPL v2](https://opensource.org/licenses/GNU GPL v2) license.
+  This repository is licensed under GNU GPL v2 license.
   
     
   ## Features
@@ -44,7 +44,7 @@
     Feel free to refactor code
     
   ## Tests
-  run node index.js in the terminal
+  run node index
 
   ## Questions
   If you have any questions or comment about this repository, you can reach me at [e.kankam95@hotmail.com](mailto:e.kankam95@hotmail.com).

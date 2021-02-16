@@ -25,7 +25,7 @@ function renderLicenseSection(license) {
   return `
   ## License
   ${license ?
-      `This repository is licensed under [${license}](https://opensource.org/licenses/${license}) license.` : ''}
+      `This repository is licensed under ${license} license.` : ''}
   `
 
 }
