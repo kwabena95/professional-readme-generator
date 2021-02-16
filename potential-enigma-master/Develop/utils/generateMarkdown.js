@@ -63,10 +63,10 @@ function generateMarkdown(data) {
     
   ## Usage
   ![./image/Screenshot.png](./image/Screenshot.png)
-  
+
   ${data.usage}
-
-
+  For a video walk-through, please click on the link [https://youtu.be/LmZcIdd0ygA](https://youtu.be/LmZcIdd0ygA)
+  
   ## Credits
   ${data.credit ? data.credit : ''}
 

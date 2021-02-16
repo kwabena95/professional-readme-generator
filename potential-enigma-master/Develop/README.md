@@ -1,7 +1,7 @@
 
   # Professional README Generator
 
-  [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   ## Description
    To help users generate readme quickly and easily
@@ -26,16 +26,16 @@
     
   ## Usage
   ![./image/Screenshot.png](./image/Screenshot.png)
-  
+
   Run node index.js in the terminal. if succesful, your terminal should look like this screenshot.
-
-
+  For a video walk-through, please click on the link [https://youtu.be/LmZcIdd0ygA](https://youtu.be/LmZcIdd0ygA)
+  
   ## Credits
   
 
   
   ## License
-  This repository is licensed under Apache license.
+  This repository is licensed under MIT license.
   
     
   ## Features
