@@ -1,8 +1,11 @@
+const linkBadges = require('./badges');
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (!license) return '';
 
+  let badge = linkBadges[license];
+  return badge;
 }
 
 // TODO: Create a function that returns the license link
@@ -22,7 +25,7 @@ function renderLicenseSection(license) {
   return `
   ## License
   Use this link if you need help choosing a license ${renderLicenseLink(license)}
-  * ${license.license ? license.license : ''}
+  ${license ? `* ${license}` : ''}
   `
 
 }
@@ -42,7 +45,7 @@ function generateMarkdown(data) {
       `* [Description](#description)
   * [Installation](#installation)
   * [Usage](#usage)
-  * [Credits](#confirmCredit)
+  * [Credits](#credit)
   * [License](#license)
   * [Features](#feature)
   * [Contributions](#contribution)
@@ -62,13 +65,15 @@ function generateMarkdown(data) {
   ## Credits
   ${data.credit ? data.credit : ''}
 
-  * ${renderLicenseSection(data.license)}
+  ${renderLicenseSection(data.license)}${renderLicenseBadge(data.license)}
     
   ## Features
-  ${data.feature ? data.feature : ''}
+  ${data.feature ? data.title : ''}
     
   ## Contributions
-  ${data.contribution ? data.contribution : ''}
+  ${data.contribution ?
+      `* ${data.contribution}`
+      : ''}
     
   ## Tests
   ${data.test}
