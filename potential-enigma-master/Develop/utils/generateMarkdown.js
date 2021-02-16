@@ -24,7 +24,6 @@ function renderLicenseSection(license) {
 
   return `
   ## License
-  Use this link if you need help choosing a license ${renderLicenseLink(license)}
   ${license ?
       `This repository is licensed under [${license}](https://opensource.org/licenses/${license}) license.` : ''}
   `
