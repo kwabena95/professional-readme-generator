@@ -1,7 +1,7 @@
 
   # Professional README Generator
 
-  [![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
+  [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
   ## Description
    To help users generate readme quickly and easily
@@ -26,7 +26,8 @@
     
   ## Usage
   ![./image/Screenshot.png](./image/Screenshot.png)
-  Run node index.js in the terminal. if succesful, your terminal should look like this screenshot. 
+  
+  Run node index.js in the terminal. if succesful, your terminal should look like this screenshot.
 
 
   ## Credits
@@ -34,7 +35,7 @@
 
   
   ## License
-  This repository is licensed under GNU GPL v2 license.
+  This repository is licensed under Apache license.
   
     
   ## Features
@@ -44,7 +45,7 @@
     Feel free to refactor code
     
   ## Tests
-  run node index
+  run node index.js
 
   ## Questions
   If you have any questions or comment about this repository, you can reach me at [e.kankam95@hotmail.com](mailto:e.kankam95@hotmail.com).
