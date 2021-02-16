@@ -71,9 +71,7 @@ function generateMarkdown(data) {
   ${data.feature ? data.title : ''}
     
   ## Contributions
-  ${data.contribution ?
-      `* ${data.contribution}`
-      : ''}
+  ${data.contribution ? data.contribution : ''}
     
   ## Tests
   ${data.test}
