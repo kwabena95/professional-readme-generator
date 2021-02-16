@@ -26,30 +26,30 @@
     
   ## Usage
   ![./image/Screenshot.png](./image/Screenshot.png)
-  Run node index.js in the terminal. if succesful, your terminal should look like this screenshot.
+  Run node index.js in the terminal. if succesful, your terminal should look like this screenshot. 
 
 
   ## Credits
   
 
-  This repository is licensed under 
+  This repository is licensed under [
   ## License
   Use this link if you need help choosing a license 
   [https://choosealicense.com/](https://choosealicense.com/)
   
   MIT
-    
+  ](https://opensource.org/licenses/MIT) license.
     
   ## Features
   Professional README Generator
     
   ## Contributions
-    Feel free to refactor code
+  Feel free to refactor code
     
   ## Tests
-  node.js
+  run node.js in terminal
 
   ## Questions
-  If you have any questions or comment about this repository, you can reach me at [e.kankam95@hotmail.com](e.kankam95@hotmail.com).
+  If you have any questions or comment about this repository, you can reach me at [e.kankam95@hotmail.com](mailto: e.kankam95@hotmail.com).
   Feel free to view more of my work on GitHub at [kwabena95](https://github.com/kwabena95)
   

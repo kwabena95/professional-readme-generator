@@ -69,7 +69,7 @@ function generateMarkdown(data) {
   ## Credits
   ${data.credit ? data.credit : ''}
 
-  This repository is licensed under ${renderLicenseSection(data.license)}  
+  This repository is licensed under [${renderLicenseSection(data.license)}](https://opensource.org/licenses/${data.license}) license.
     
   ## Features
   ${data.feature ? data.title : ''}
@@ -81,7 +81,7 @@ function generateMarkdown(data) {
   ${data.test}
 
   ## Questions
-  If you have any questions or comment about this repository, you can reach me at [${data.email}](${data.email}).
+  If you have any questions or comment about this repository, you can reach me at [${data.email}](mailto: ${data.email}).
   Feel free to view more of my work on GitHub at [${data.username}](https://github.com/${data.username})
   `;
 }
