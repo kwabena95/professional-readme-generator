@@ -130,6 +130,32 @@ const questions = () => {
                     return false;
                 }
             }
+        },
+        {
+            type: 'input',
+            name: 'email',
+            message: 'Enter your email address',
+            validate: emailInput => {
+                if (emailInput) {
+                    return true;
+                } else {
+                    console.log('Please provide email and github username.');
+                    return false;
+                }
+            }
+        },
+        {
+            type: 'input',
+            name: 'username',
+            message: 'Enter your gitHub username',
+            validate: usernameInput => {
+                if (usernameInput) {
+                    return true;
+                } else {
+                    console.log('Please provide email and github username.');
+                    return false;
+                }
+            }
         }
 
     ]).then(data => {

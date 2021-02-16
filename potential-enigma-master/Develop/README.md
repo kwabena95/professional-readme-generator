@@ -1,6 +1,8 @@
 
   # Professional README Generator
 
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
   ## Description
    To help users generate readme quickly and easily
     
@@ -14,28 +16,29 @@
   * [Features](#features)
   * [Contributions](#contributions)
   * [Tests](#tests)
+  * [Questions](#questions)
  
 
    
     
   ## Installation
-  * You have clone the repository on to your local machine
+  * You have to clone the repository onto your local machine
     
   ## Usage
   ![./image/Screenshot.png](./image/Screenshot.png)
-  * Run node index.js in the terminal. if succesful, your terminal should look like this screenshot.
+  Run node index.js in the terminal. if succesful, your terminal should look like this screenshot.
 
 
   ## Credits
   
 
-  
+  This repository is licensed under 
   ## License
   Use this link if you need help choosing a license 
   [https://choosealicense.com/](https://choosealicense.com/)
   
-  GNU GPL v2
-    [![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
+  MIT
+    
     
   ## Features
   Professional README Generator
@@ -44,6 +47,9 @@
     Feel free to refactor code
     
   ## Tests
-  node index.js
-    
+  node.js
+
+  ## Questions
+  If you have any questions or comment about this repository, you can reach me at [e.kankam95@hotmail.com](e.kankam95@hotmail.com).
+  Feel free to view more of my work on GitHub at [kwabena95](https://github.com/kwabena95)
   

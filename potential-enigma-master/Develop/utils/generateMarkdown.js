@@ -36,6 +36,8 @@ function generateMarkdown(data) {
   return `
   # ${data.title}
 
+  ${renderLicenseBadge(data.license)}
+
   ## Description
   ${data.description}
     
@@ -49,7 +51,8 @@ function generateMarkdown(data) {
   * [License](#license)
   * [Features](#features)
   * [Contributions](#contributions)
-  * [Tests](#tests)`
+  * [Tests](#tests)
+  * [Questions](#questions)`
     }
  
 
@@ -60,13 +63,13 @@ function generateMarkdown(data) {
     
   ## Usage
   ![./image/Screenshot.png](./image/Screenshot.png)
-  * ${data.usage}
+  ${data.usage}
 
 
   ## Credits
   ${data.credit ? data.credit : ''}
 
-  ${renderLicenseSection(data.license)}  ${renderLicenseBadge(data.license)}
+  This repository is licensed under ${renderLicenseSection(data.license)}  
     
   ## Features
   ${data.feature ? data.title : ''}
@@ -76,7 +79,10 @@ function generateMarkdown(data) {
     
   ## Tests
   ${data.test}
-    
+
+  ## Questions
+  If you have any questions or comment about this repository, you can reach me at [${data.email}](${data.email}).
+  Feel free to view more of my work on GitHub at [${data.username}](https://github.com/${data.username})
   `;
 }
 
